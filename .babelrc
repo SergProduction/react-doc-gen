@@ -1,0 +1,12 @@
+{
+  "parserOpts": {
+    "plugins": [
+      "jsx",
+      "flow",
+      "flowComments",
+      "typescript",
+      "objectRestSpread",
+      "classProperties"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "react-doc-gen",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "react-doc-gen": "./bin/react-doc-gen.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "meow": "^4.0.0",
+    "recursive-readdir": "^2.2.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}

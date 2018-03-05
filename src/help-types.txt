@@ -1,0 +1,41 @@
+fn args = []
+obj defined = []
+fn args -> obj defined -> [[]]
+
+1. oneOfkey: P.oneOf(['oneOfString', 'oneOfOtherString'])
+
+1.{
+  key: oneOfkey,
+  type: {
+    key: 'oneOf',
+    type: [ // ['oneOfString', 'oneOfOtherString']
+      {key: 'oneOfString'},
+      {key: 'oneOfOtherString'},
+    ]
+  }
+}
+
+
+2.manyMatches: P.shape({
+  id: P.number,
+  matchName: P.string,
+})
+
+2.{
+  key: manyMatches,
+  type: {
+    key: 'shape',
+    type: [
+      {key: 'id', type: 'number'},
+      {key: 'matchName', type: 'string'}
+    ]
+  }
+}
+
+
+3.id: P.number
+
+3.{
+  key: 'id',
+  type: 'number'
+}
